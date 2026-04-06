@@ -8,7 +8,7 @@ export function MatchedSection() {
       <div className="max-w-7xl mx-auto">
         {/* CTA Button */}
         <div className="mb-10 md:mb-16 text-center">
-          <a href="/contact" className="inline-block bg-white border-2 border-[#0F3D66] text-[#0F3D66] px-6 md:px-8 py-3 rounded text-base md:text-lg font-bold hover:bg-[#0F3D66] hover:text-white transition">
+          <a href="/contact" className="inline-block bg-white border-2 border-[#0F3D66] text-[#1B2A3D] px-6 md:px-8 py-3 rounded text-base md:text-lg font-bold hover:bg-[#1B2A3D] hover:text-white transition">
             Click Here To Create A Home Care Plan
           </a>
         </div>
@@ -22,10 +22,10 @@ export function MatchedSection() {
             </h2>
             
             <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6">
-              Navigating care options for a loved one can feel overwhelming. At <strong>Senior Home Care Consultants</strong>, we guide you step-by-step—connecting you with reputable, local non-medical home care agencies in Las Vegas, Reno, and Southern California. Let's make finding care simple, personal, and stress-free.
+              Navigating care options for a loved one can feel overwhelming. At <strong>New hope senior living advisory LLC</strong>, we guide you step-by-step—connecting you with reputable, local non-medical home care agencies in Dallas Fort Worth, DFW, and DFW area. Let's make finding care simple, personal, and stress-free.
             </p>
 
-            <a href="/services" className="inline-block bg-[#0F3D66] text-white px-6 md:px-8 py-3 rounded text-sm md:text-base font-semibold hover:bg-[#1B4D7B] transition">
+            <a href="/services" className="inline-block bg-[#1B2A3D] text-white px-6 md:px-8 py-3 rounded text-sm md:text-base font-semibold hover:bg-[#1B4D7B] transition">
               Learn More
             </a>
           </div>

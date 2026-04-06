@@ -1,57 +1,86 @@
 'use client'
-
-import { Facebook, Twitter, Instagram } from 'lucide-react'
+import { Home, Heart, Phone, Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react'
+import Link from 'next/link'
 
 export function Footer() {
   return (
-    <footer className="bg-[#0F3D66] text-white py-10 md:py-12 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4">Senior Home Care Consultants</h3>
-            <p className="text-gray-300 text-xs md:text-sm leading-relaxed mb-4">
-              A family-oriented consulting firm that helps individuals and their loved ones find the right non-medical home care solutions.
+    <footer className="bg-[#1B2A3D] text-gray-300 py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+          
+          <div className="lg:col-span-2">
+            <Link href="/" className="flex items-center gap-2 mb-6 inline-flex">
+              <div className="relative flex flex-col items-center justify-center bg-[#597B76] text-white p-2 rounded-t-full rounded-b-md">
+                <Home size={24} />
+                <Heart size={12} className="absolute top-2 right-2 text-red-500 fill-current" />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-[#597B76] font-bold text-xl leading-none">New hope</span>
+                <span className="text-white text-xs font-semibold uppercase tracking-wider">senior living advisory LLC</span>
+              </div>
+            </Link>
+            
+            <p className="mb-4 text-justify pr-0 lg:pr-12 leading-relaxed">
+              We are a FREE referral service helping families find the right independent living, assisted living, memory care, and residential care homes in the Dallas Fort Worth area.
             </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-gray-300 hover:text-white transition"><Facebook className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-300 hover:text-white transition"><Twitter className="w-5 h-5" /></a>
-              <a href="#" className="text-gray-300 hover:text-white transition"><Instagram className="w-5 h-5" /></a>
-            </div>
-          </div>
-          <div>
-            <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4">Quick Links</h3>
-            <ul className="text-xs md:text-sm text-gray-300 space-y-2">
-              <li><a href="/" className="hover:text-white transition">Home</a></li>
-              <li><a href="/about" className="hover:text-white transition">About</a></li>
-              <li><a href="/services" className="hover:text-white transition">Services</a></li>
-              <li><a href="/contact" className="hover:text-white transition">Contact</a></li>
-              <li><a href="#" className="hover:text-white transition">Resource Blogs For Seniors</a></li>
-            </ul>
-          </div>
-          <div className="sm:col-span-2 md:col-span-1">
-            <h3 className="text-base md:text-lg font-bold mb-3 md:mb-4">Contact Information</h3>
-            <ul className="text-xs md:text-sm text-gray-300 space-y-2">
-              <li className="break-all">info@seniorhomecareconsultants.com</li>
-              <li>Las Vegas: <a href="tel:7257771667" className="hover:text-white transition">725-777-1667</a></li>
-              <li>San Diego: <a href="tel:6193639346" className="hover:text-white transition">619-363-9346</a></li>
-              <li>Mon-Fri 9:00AM - 5:00PM</li>
-            </ul>
-          </div>
-        </div>
 
-        <div className="border-t border-blue-400/30 pt-6 md:pt-8">
-          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 text-xs md:text-sm text-gray-300">
-            <p>All Rights Reserved by Senior Home Care Consultants, LLC ©{new Date().getFullYear()}</p>
-            <div className="flex flex-wrap justify-center sm:justify-end items-center gap-2 md:gap-4">
-              <a href="#" className="hover:text-white transition">Terms</a>
-              <span>|</span>
-              <a href="#" className="hover:text-white transition">Privacy</a>
-              <span>|</span>
-              <a href="#" className="hover:text-white transition">Refund Policy</a>
-              <span>|</span>
-              <a href="#" className="hover:text-white transition">Shipping</a>
+            <div className="flex items-start gap-3 mb-3">
+              <MapPin className="text-[#597B76] mt-1 shrink-0" size={20} />
+              <p>505 Nona street,<br/>Garland, TX 75040</p>
+            </div>
+            
+            <div className="flex items-center gap-3 mb-3">
+              <Phone className="text-[#597B76] shrink-0" size={20} />
+              <p>214.929.5055</p>
+            </div>
+            
+            <div className="mt-6">
+              <p className="font-bold text-white mb-3">Connect With Us</p>
+              <div className="flex gap-4">
+                <a href="#" className="bg-[#2A405C] p-2 rounded-full hover:bg-[#597B76] transition"><Facebook size={20} /></a>
+                <a href="#" className="bg-[#2A405C] p-2 rounded-full hover:bg-[#597B76] transition"><Twitter size={20} /></a>
+                <a href="#" className="bg-[#2A405C] p-2 rounded-full hover:bg-[#597B76] transition"><Instagram size={20} /></a>
+                <a href="#" className="bg-[#2A405C] p-2 rounded-full hover:bg-[#597B76] transition"><Linkedin size={20} /></a>
+              </div>
             </div>
           </div>
+          
+          <div>
+            <h3 className="text-xl font-bold text-white mb-6 border-b border-[#2A405C] pb-2">Areas We Serve</h3>
+            <ul className="space-y-2 text-sm">
+              <li>Dallas</li>
+              <li>Plano</li>
+              <li>Frisco</li>
+              <li>McKinney</li>
+              <li>Allen</li>
+              <li>Richardson</li>
+              <li>Garland</li>
+              <li>Mesquite</li>
+              <li>Rowlett</li>
+              <li>Rockwall</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 className="text-xl font-bold text-white mb-6 border-b border-[#2A405C] pb-2 text-transparent select-none border-none">More Cities</h3>
+            <ul className="space-y-2 text-sm md:mt-2">
+              <li>Fort Worth</li>
+              <li>Arlington</li>
+              <li>Irving</li>
+              <li>Grand Prairie</li>
+              <li>Carrollton</li>
+              <li>Lewisville</li>
+              <li>Flower Mound</li>
+              <li>Grapevine</li>
+              <li>Southlake</li>
+              <li>Colleyville</li>
+            </ul>
+          </div>
+
+        </div>
+        
+        <div className="border-t border-[#2A405C] mt-12 pt-8 text-center text-sm text-gray-500">
+          <p>&copy; {new Date().getFullYear()} New hope senior living advisory LLC. All rights reserved.</p>
         </div>
       </div>
     </footer>

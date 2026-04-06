@@ -7,8 +7,8 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Senior Home Care Consultants - Trusted Caregivers',
-  description: 'Find reliable, compassionate home care services in Las Vegas, Reno, and Southern California. Connect with trusted non-medical caregivers today.',
+  title: 'New hope senior living advisory LLC - Trusted Caregivers',
+  description: 'Find reliable, compassionate home care services in Dallas Fort Worth, DFW, and DFW area. Connect with trusted non-medical caregivers today.',
   generator: 'v0.app',
   icons: {
     icon: [

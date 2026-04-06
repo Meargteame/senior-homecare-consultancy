@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: 'What areas do you serve?',
-    a: 'We currently serve Las Vegas, Henderson, Reno, and Southern California (including San Diego, Chula Vista, Escondido, and surrounding areas). We are growing nationwide—call us even if you are outside these areas.'
+    a: 'We currently serve Dallas Fort Worth, Henderson, DFW, and DFW area (including DFW, Chula Vista, Escondido, and surrounding areas). We are growing nationwide—call us even if you are outside these areas.'
   },
   {
     q: 'What is the difference between medical and non-medical home care?',
@@ -52,7 +52,7 @@ export function FAQSection() {
               >
                 <span className="font-semibold text-gray-900 text-sm md:text-base">{faq.q}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-[#0F3D66] shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}
+                  className={`w-5 h-5 text-[#1B2A3D] shrink-0 transition-transform duration-200 ${openIndex === i ? 'rotate-180' : ''}`}
                 />
               </button>
               {openIndex === i && (
@@ -62,13 +62,6 @@ export function FAQSection() {
               )}
             </div>
           ))}
-        </div>
-
-        <div className="text-center mt-8">
-          <p className="text-gray-500 text-sm mb-3">Still have questions?</p>
-          <a href="tel:7257771667" className="inline-block bg-[#0F3D66] text-white px-6 py-3 rounded font-bold text-sm hover:bg-[#1B4D7B] transition">
-            Call Us: 725-777-1667
-          </a>
         </div>
       </div>
     </div>

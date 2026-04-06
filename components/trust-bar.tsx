@@ -1,36 +1,32 @@
 'use client'
-
-import { Phone } from 'lucide-react'
+import { Star } from 'lucide-react'
 
 export function TrustBar() {
   return (
-    <div className="bg-gray-50 border-b border-gray-200 py-3 px-4">
-      <div className="max-w-7xl mx-auto flex flex-wrap justify-center md:justify-between items-center gap-4 text-sm">
-        <div className="flex flex-wrap justify-center gap-6 md:gap-8">
-          <div className="flex items-center gap-2 text-gray-700 font-semibold">
-            <span className="w-6 h-6 bg-[#0F3D66] text-white rounded-full flex items-center justify-center text-xs font-bold">✓</span>
-            100% Free Service
+    <div className="bg-[#597B76] text-white py-6 w-full shadow-inner">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12">
+        <div className="flex items-center gap-4">
+          <div className="bg-white rounded p-2 flex items-center justify-center">
+            {/* Google logo placeholder */}
+            <span className="text-[#4285F4] font-bold text-xl tracking-tighter">G</span>
+            <span className="text-[#EA4335] font-bold text-xl tracking-tighter">o</span>
+            <span className="text-[#FBBC05] font-bold text-xl tracking-tighter">o</span>
+            <span className="text-[#4285F4] font-bold text-xl tracking-tighter">g</span>
+            <span className="text-[#34A853] font-bold text-xl tracking-tighter">l</span>
+            <span className="text-[#EA4335] font-bold text-xl tracking-tighter">e</span>
           </div>
-          <div className="flex items-center gap-2 text-gray-700 font-semibold">
-            <span className="w-6 h-6 bg-[#0F3D66] text-white rounded-full flex items-center justify-center text-xs font-bold">✓</span>
-            Vetted Local Agencies
-          </div>
-          <div className="flex items-center gap-2 text-gray-700 font-semibold">
-            <span className="w-6 h-6 bg-[#0F3D66] text-white rounded-full flex items-center justify-center text-xs font-bold">✓</span>
-            Serving NV & CA
-          </div>
-          <div className="flex items-center gap-2 text-gray-700 font-semibold">
-            <span className="w-6 h-6 bg-[#0F3D66] text-white rounded-full flex items-center justify-center text-xs font-bold">✓</span>
-            Available 9AM–5PM Mon–Fri
+          <div className="flex flex-col">
+            <span className="font-bold text-lg">5.0 Rating</span>
           </div>
         </div>
-        <a
-          href="tel:7257771667"
-          className="hidden md:flex items-center gap-2 bg-[#0F3D66] text-white px-5 py-2 rounded font-bold text-sm hover:bg-[#1B4D7B] transition"
-        >
-          <Phone className="w-4 h-4" />
-          Call Now: 725-777-1667
-        </a>
+        <div className="flex items-center gap-4 flex-col sm:flex-row">
+          <p className="font-semibold text-lg md:text-xl text-center">500+ 5-Star Ratings from Our Clients</p>
+          <div className="flex gap-1">
+            {[1, 2, 3, 4, 5].map((i) => (
+              <Star key={i} size={24} className="fill-[#FABB05] text-[#FABB05]" />
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )

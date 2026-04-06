@@ -1,34 +1,35 @@
 'use client'
 
 export function PartnersSection() {
-  const partners = [
-    'Valley Home Care',
-    'Comfort Keepers',
-    'Home Instead',
-    'BrightSpring',
-    'Interim HealthCare',
-    'Right at Home',
-  ]
-
   return (
-    <div className="bg-gray-50 border-y border-gray-200 py-10 md:py-12 px-4">
-      <div className="max-w-7xl mx-auto">
-        <p className="text-center text-xs md:text-sm font-bold text-gray-400 uppercase tracking-widest mb-6 md:mb-8">
-          Some of Our Current Trusted Partnering Agencies
-        </p>
-        <div className="flex flex-wrap justify-center gap-4 md:gap-6">
-          {partners.map((name) => (
-            <div
-              key={name}
-              className="bg-white border border-gray-200 rounded px-5 md:px-6 py-3 text-sm md:text-base font-semibold text-gray-600 hover:border-[#0F3D66] hover:text-[#0F3D66] transition"
-            >
-              {name}
+    <div className="w-full bg-gradient-to-b from-[#F4F4EB] to-white py-24">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="bg-white rounded-3xl shadow-2xl p-10 md:p-16 relative overflow-hidden text-center max-w-5xl mx-auto border border-gray-100">
+          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-[#597B76] via-[#7AA8A1] to-[#597B76]"></div>
+          <p className="text-[#597B76] font-semibold tracking-wider uppercase text-sm mb-4">Trusted Local Experts</p>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-[#1B2A3D] mb-6 leading-tight">
+            The Preferred Senior Living<br/>Advisory Service in DFW
+          </h2>
+          <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Families trust us because we're uniquely local, deeply experienced, and maintain relationships with over 1,200 care communities across the DFW area. Proudly featured on:
+          </p>
+          
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20">
+            {/* Logo placeholders - styled more modernly */}
+            <div className="group flex items-center justify-center p-4 transition-all duration-300 hover:scale-105 opacity-60 hover:opacity-100">
+              <span className="text-3xl font-black font-sans tracking-tighter text-[#1B2A3D]">FOX 4</span>
             </div>
-          ))}
+            <div className="group flex items-center justify-center p-4 transition-all duration-300 hover:scale-105 opacity-60 hover:opacity-100">
+              <span className="text-3xl font-black font-sans tracking-tighter text-[#1B2A3D]">CBS 11</span>
+            </div>
+            <div className="group flex items-center justify-center p-4 transition-all duration-300 hover:scale-105 opacity-60 hover:opacity-100">
+              <span className="text-3xl font-black font-sans tracking-tighter text-[#1B2A3D]">WFAA 8</span>
+            </div>
+            <div className="group flex items-center justify-center p-4 transition-all duration-300 hover:scale-105 opacity-60 hover:opacity-100">
+              <span className="text-xl md:text-2xl font-bold font-serif text-center leading-tight text-[#1B2A3D]">The Dallas<br/>Morning News</span>
+            </div>
+          </div>
         </div>
-        <p className="text-center text-xs text-gray-400 mt-4 md:mt-6">
-          More cities and agencies to be added as we grow nationwide.
-        </p>
       </div>
     </div>
   )

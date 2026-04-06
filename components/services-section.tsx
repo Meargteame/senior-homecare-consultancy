@@ -31,7 +31,7 @@ export function ServicesSection() {
   ]
 
   return (
-    <div className="bg-[#0F3D66] py-12 md:py-16 px-4">
+    <div className="bg-[#1B2A3D] py-12 md:py-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white text-center mb-8 md:mb-12 px-2">
           Helps Families Find Trusted and Compassionate Caregivers
@@ -56,7 +56,7 @@ export function ServicesSection() {
         </div>
 
         <div className="text-center">
-          <a href="/services" className="inline-block bg-white text-[#0F3D66] px-6 md:px-8 py-3 rounded text-sm font-bold hover:bg-gray-100 transition">
+          <a href="/services" className="inline-block bg-white text-[#1B2A3D] px-6 md:px-8 py-3 rounded text-sm font-bold hover:bg-gray-100 transition">
             View All Services
           </a>
         </div>

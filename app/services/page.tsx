@@ -7,7 +7,7 @@ import { CTASection } from '@/components/cta-section'
 import { MobileStickyCall } from '@/components/mobile-sticky-call'
 
 export const metadata: Metadata = {
-  title: 'Our Services | Senior Home Care Consultants – NV & CA',
+  title: 'Our Services | New hope senior living advisory LLC – NV & CA',
   description: 'Explore our senior home care placement services including home caregivers, senior caregivers, respite care, and live-in caregiver matching across Nevada and California.',
 }
 
@@ -26,7 +26,7 @@ export default function ServicesPage() {
           className="absolute inset-0 w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-[#0F3D66]/75"></div>
+        <div className="absolute inset-0 bg-[#1B2A3D]/75"></div>
         <div className="relative z-10 max-w-7xl mx-auto text-center px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 md:mb-4">Our Services</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ export default function ServicesPage() {
               { step: 3, title: 'Ongoing Support', desc: 'We remain available as a resource to ensure you are 100% satisfied with the care provided.' },
             ].map(({ step, title, desc }) => (
               <div key={step} className="p-4 md:p-6">
-                <div className="w-12 h-12 md:w-16 md:h-16 bg-[#0F3D66] text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-bold mx-auto mb-4 md:mb-6">{step}</div>
+                <div className="w-12 h-12 md:w-16 md:h-16 bg-[#1B2A3D] text-white rounded-full flex items-center justify-center text-xl md:text-2xl font-bold mx-auto mb-4 md:mb-6">{step}</div>
                 <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">{title}</h3>
                 <p className="text-gray-600 text-sm md:text-base">{desc}</p>
               </div>

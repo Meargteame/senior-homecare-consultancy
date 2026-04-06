@@ -21,7 +21,7 @@ export default function ContactPage() {
           className="absolute inset-0 w-full h-full object-cover"
           referrerPolicy="no-referrer"
         />
-        <div className="absolute inset-0 bg-[#0F3D66]/75"></div>
+        <div className="absolute inset-0 bg-[#1B2A3D]/75"></div>
         <div className="relative z-10 max-w-7xl mx-auto text-center px-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-3 md:mb-4">Contact Us</h1>
           <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-2xl mx-auto">
@@ -38,36 +38,36 @@ export default function ContactPage() {
             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6 md:mb-8">Get In Touch</h2>
             <div className="space-y-6 md:space-y-8">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#0F3D66]/10 rounded-full flex items-center justify-center text-[#0F3D66] shrink-0 mt-0.5">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1B2A3D]/10 rounded-full flex items-center justify-center text-[#1B2A3D] shrink-0 mt-0.5">
                   <Phone className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Call Us</h3>
-                  <p className="text-gray-600 text-sm md:text-base">Las Vegas: <a href="tel:725-777-1667" className="text-[#0F3D66] hover:underline font-medium">725-777-1667</a></p>
-                  <p className="text-gray-600 text-sm md:text-base">San Diego: <a href="tel:619-363-9346" className="text-[#0F3D66] hover:underline font-medium">619-363-9346</a></p>
+                  <p className="text-gray-600 text-sm md:text-base">Dallas Fort Worth: <a href="tel:214-929-5055" className="text-[#1B2A3D] hover:underline font-medium">214-929-5055</a></p>
+                  <p className="text-gray-600 text-sm md:text-base">DFW: <a href="tel:619-363-9346" className="text-[#1B2A3D] hover:underline font-medium">619-363-9346</a></p>
                 </div>
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#0F3D66]/10 rounded-full flex items-center justify-center text-[#0F3D66] shrink-0 mt-0.5">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1B2A3D]/10 rounded-full flex items-center justify-center text-[#1B2A3D] shrink-0 mt-0.5">
                   <MapPin className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Service Areas</h3>
                   <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                    Las Vegas, Reno, and Southern California<br/>
+                    Dallas Fort Worth, DFW, and DFW area<br/>
                     (More cities to be added as we grow nationwide)
                   </p>
                 </div>
               </div>
               
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#0F3D66]/10 rounded-full flex items-center justify-center text-[#0F3D66] shrink-0 mt-0.5">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#1B2A3D]/10 rounded-full flex items-center justify-center text-[#1B2A3D] shrink-0 mt-0.5">
                   <Mail className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Email Address</h3>
-                  <a href="mailto:info@seniorhomecareconsultants.com" className="text-[#0F3D66] hover:underline text-sm md:text-base break-all">
+                  <a href="mailto:info@seniorhomecareconsultants.com" className="text-[#1B2A3D] hover:underline text-sm md:text-base break-all">
                     info@seniorhomecareconsultants.com
                   </a>
                 </div>
@@ -101,7 +101,7 @@ export default function ContactPage() {
                 <label className="block text-sm font-semibold text-gray-700 mb-1.5">Message</label>
                 <textarea rows={4} className="w-full px-4 py-3 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#0F3D66] focus:border-transparent transition resize-none text-sm" placeholder="How can we help you?"></textarea>
               </div>
-              <button type="submit" className="w-full bg-[#0F3D66] hover:bg-[#1B4D7B] text-white px-8 py-3 md:py-4 rounded text-base font-bold transition">
+              <button type="submit" className="w-full bg-[#1B2A3D] hover:bg-[#1B4D7B] text-white px-8 py-3 md:py-4 rounded text-base font-bold transition">
                 Send Message
               </button>
             </form>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Header } from '@/components/header'
-import { TrustBar } from '@/components/trust-bar'
 import { HeroSection } from '@/components/hero-section'
+import { SeniorLivingOptions } from '@/components/senior-living-options'
 import { MatchedSection } from '@/components/matched-section'
 import { WhySection } from '@/components/why-section'
 import { PartnersSection } from '@/components/partners-section'
@@ -13,22 +13,22 @@ import { Footer } from '@/components/footer'
 import { MobileStickyCall } from '@/components/mobile-sticky-call'
 
 export const metadata: Metadata = {
-  title: 'Senior Home Care Consultants | Free Care Placement – Las Vegas & San Diego',
-  description: 'Senior Home Care Consultants connects families with trusted, vetted non-medical home care agencies in Las Vegas, Reno, and Southern California. Free placement service. Call 725-777-1667.',
-  keywords: ['senior home care', 'home care Las Vegas', 'home care San Diego', 'caregiver placement', 'non-medical home care', 'respite care Nevada', 'senior care California'],
+  title: 'New hope senior living advisory LLC | Dallas & Fort Worth',
+  description: 'New hope senior living advisory LLC connects families with trusted senior living options in Dallas Fort Worth (DFW). Connect with Addis Eshetu today.',
+  keywords: ['senior living', 'dallas', 'fort worth', 'DFW', 'senior care', 'New hope senior living advisory LLC', 'Addis Eshetu'],
   openGraph: {
-    title: 'Senior Home Care Consultants | Free Care Placement',
-    description: 'Free, compassionate senior care placement in Las Vegas, Reno & Southern California. We match your family with vetted local agencies.',
+    title: 'New hope senior living advisory LLC | Dallas & Fort Worth',
+    description: 'Free, compassionate senior care placement in Dallas Fort Worth (DFW). We match your family with vetted local agencies.',
     type: 'website',
   },
 }
 
 export default function Home() {
   return (
-    <main className="pb-16 md:pb-0">
+    <main className="pb-16 md:pb-0 font-sans text-[#1B2A3D]">
       <Header />
-      <TrustBar />
       <HeroSection />
+      <SeniorLivingOptions />
       <MatchedSection />
       <WhySection />
       <ServicesSection />
