@@ -1,14 +1,20 @@
 'use client'
-import { Check, Phone, ArrowRight } from 'lucide-react'
+import { Check, Phone, ArrowRight, PhoneCall, ClipboardList, Heart } from 'lucide-react'
+
+const steps = [
+  { icon: PhoneCall, label: 'Call Us Free', desc: 'One conversation, no obligation' },
+  { icon: ClipboardList, label: 'We Assess Needs', desc: 'We learn what matters most' },
+  { icon: Heart, label: 'You Choose', desc: 'We present your best options' },
+]
 
 export function HeroSection() {
   return (
-    <div className="relative w-full overflow-hidden bg-[#F4F4EB] py-16 md:py-28">
+    <div className="relative w-full overflow-hidden bg-[#F4F4EB]">
       {/* Decorative background blur */}
       <div className="absolute top-0 left-0 w-96 h-96 bg-[#597B76]/10 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2"></div>
       <div className="absolute bottom-0 right-0 w-[30rem] h-[30rem] bg-[#1B2A3D]/5 rounded-full blur-[100px] translate-x-1/3 translate-y-1/3"></div>
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-16">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28 flex flex-col md:flex-row items-center gap-16">
         <div className="w-full md:w-1/2 relative group">
           <div className="absolute inset-0 bg-gradient-to-tr from-[#597B76]/20 to-transparent rounded-3xl -rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
           <img
@@ -29,23 +35,23 @@ export function HeroSection() {
         <div className="w-full md:w-1/2 z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#597B76]/10 text-[#597B76] font-semibold text-sm mb-6 border border-[#597B76]/20">
             <span className="w-2 h-2 rounded-full bg-[#597B76] animate-pulse"></span>
-            Trusted Placement Service
+            Trusted Placement Service — Dallas Fort Worth
           </div>
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#1B2A3D] mb-6 tracking-tight leading-[1.1]">
-            Simplify Your <br/>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1B2A3D] to-[#597B76]">Search</span>
+            Find the Right<br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#1B2A3D] to-[#597B76]">Senior Care</span>
           </h1>
           <h2 className="text-xl md:text-2xl font-medium text-gray-600 mb-8 leading-relaxed">
             Independent Living, Assisted Living, Memory Care and Residential Care Homes in Dallas Fort Worth
           </h2>
           
-          <ul className="space-y-5 mb-10">
-            {['We provide a FREE Placement Service - no obligation', 'Our team has years of experience in senior care', 'We\'ve assisted many families across DFW'].map((item, i) => (
-              <li key={i} className="flex items-start bg-white/40 backdrop-blur-sm p-3 rounded-2xl border border-white/60 shadow-sm">
+          <ul className="space-y-4 mb-10">
+            {['FREE placement service — no obligation, ever', 'Local DFW expert with personal family experience', 'We do the research so your family doesn\'t have to'].map((item, i) => (
+              <li key={i} className="flex items-start bg-white/50 backdrop-blur-sm p-3 rounded-2xl border border-white/70 shadow-sm">
                 <div className="bg-gradient-to-br from-[#597B76] to-[#3d5753] rounded-full p-1.5 mr-4 mt-0.5 flex-shrink-0 shadow-md">
                   <Check size={14} className="text-white" strokeWidth={3} />
                 </div>
-                <span className="text-gray-800 text-lg font-medium">{item}</span>
+                <span className="text-gray-800 text-base md:text-lg font-medium">{item}</span>
               </li>
             ))}
           </ul>
@@ -56,9 +62,29 @@ export function HeroSection() {
               CALL 214-518-3242
             </a>
             <a href="/contact" className="group flex items-center justify-center gap-3 bg-white text-[#1B2A3D] border-2 border-[#1B2A3D]/10 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 hover:border-[#1B2A3D]/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 uppercase">
-              Contact Us
+              Get Free Help
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </a>
+          </div>
+        </div>
+      </div>
+
+      {/* How It Works strip */}
+      <div className="relative border-t border-[#597B76]/15 bg-white/60 backdrop-blur-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-0 divide-y sm:divide-y-0 sm:divide-x divide-[#597B76]/15">
+            {steps.map(({ icon: Icon, label, desc }, i) => (
+              <div key={i} className="flex items-center gap-4 px-6 py-4 sm:py-2 first:pl-0 last:pr-0">
+                <div className="w-11 h-11 rounded-full bg-[#597B76]/10 flex items-center justify-center shrink-0">
+                  <Icon className="w-5 h-5 text-[#597B76]" />
+                </div>
+                <div>
+                  <p className="font-bold text-[#1B2A3D] text-sm">{label}</p>
+                  <p className="text-gray-500 text-xs mt-0.5">{desc}</p>
+                </div>
+                <span className="ml-auto text-2xl font-black text-[#597B76]/20 hidden sm:block">{i + 1}</span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
