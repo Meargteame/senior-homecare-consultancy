@@ -40,7 +40,7 @@ export function HeroSection() {
           </h2>
           
           <ul className="space-y-5 mb-10">
-            {['We provide a FREE Placement Service - no obligation', 'Our team has over 400 years experience in senior care', 'We\'ve assisted over 15,000 families'].map((item, i) => (
+            {['We provide a FREE Placement Service - no obligation', 'Our team has years of experience in senior care', 'We\'ve assisted many families across DFW'].map((item, i) => (
               <li key={i} className="flex items-start bg-white/40 backdrop-blur-sm p-3 rounded-2xl border border-white/60 shadow-sm">
                 <div className="bg-gradient-to-br from-[#597B76] to-[#3d5753] rounded-full p-1.5 mr-4 mt-0.5 flex-shrink-0 shadow-md">
                   <Check size={14} className="text-white" strokeWidth={3} />
@@ -51,9 +51,9 @@ export function HeroSection() {
           </ul>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <a href="tel:214-929-5055" className="group flex items-center justify-center gap-3 bg-gradient-to-r from-[#1B2A3D] to-[#2A405C] text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-[#1B2A3D]/30 transition-all duration-300 hover:-translate-y-1">
+            <a href="tel:214-518-3242" className="group flex items-center justify-center gap-3 bg-gradient-to-r from-[#1B2A3D] to-[#2A405C] text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-lg hover:shadow-[#1B2A3D]/30 transition-all duration-300 hover:-translate-y-1">
               <Phone className="w-5 h-5 transition-transform group-hover:rotate-12" />
-              CALL 214-929-5055
+              CALL 214-518-3242
             </a>
             <a href="/contact" className="group flex items-center justify-center gap-3 bg-white text-[#1B2A3D] border-2 border-[#1B2A3D]/10 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-50 hover:border-[#1B2A3D]/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 uppercase">
               Contact Us

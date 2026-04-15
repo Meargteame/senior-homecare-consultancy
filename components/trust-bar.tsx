@@ -20,7 +20,7 @@ export function TrustBar() {
           </div>
         </div>
         <div className="flex items-center gap-4 flex-col sm:flex-row">
-          <p className="font-semibold text-lg md:text-xl text-center">500+ 5-Star Ratings from Our Clients</p>
+          <p className="font-semibold text-lg md:text-xl text-center">5-Star Rated by Our Clients</p>
           <div className="flex gap-1">
             {[1, 2, 3, 4, 5].map((i) => (
               <Star key={i} size={24} className="fill-[#FABB05] text-[#FABB05]" />

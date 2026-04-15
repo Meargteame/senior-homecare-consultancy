@@ -51,15 +51,15 @@ export function WhySection() {
             {/* Glassmorphism Stats Cards */}
             <div className="absolute -bottom-10 -left-6 md:-left-12 bg-white/70 backdrop-blur-xl p-6 md:p-8 rounded-[2rem] shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white z-20 hidden sm:block transition-transform duration-500 hover:-translate-y-2">
               <div className="flex flex-col items-center">
-                <span className="text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-[#1B2A3D] to-[#2A405C] mb-1">400+</span>
-                <span className="text-gray-500 font-bold uppercase tracking-widest text-xs">Years Exp.</span>
+                <span className="text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-[#1B2A3D] to-[#2A405C] mb-1">DFW</span>
+                <span className="text-gray-500 font-bold uppercase tracking-widest text-xs">Local Expert</span>
               </div>
             </div>
             
             <div className="absolute -top-10 -right-6 md:-right-12 bg-white/70 backdrop-blur-xl p-6 md:p-8 rounded-[2rem] shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white z-20 hidden sm:block transition-transform duration-500 hover:translate-y-2">
               <div className="flex flex-col items-center">
-                <span className="text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-[#597B76] to-[#7aa59d] mb-1">4</span>
-                <span className="text-gray-500 font-bold uppercase tracking-widest text-xs text-center leading-tight">Licensed<br/>Social Workers</span>
+                <span className="text-5xl font-black bg-clip-text text-transparent bg-gradient-to-r from-[#597B76] to-[#7aa59d] mb-1">FREE</span>
+                <span className="text-gray-500 font-bold uppercase tracking-widest text-xs text-center leading-tight">Placement<br/>Service</span>
               </div>
             </div>
           </div>

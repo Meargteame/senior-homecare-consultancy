@@ -42,9 +42,8 @@ export default function ContactPage() {
                   <Phone className="w-5 h-5 md:w-6 md:h-6" />
                 </div>
                 <div>
-                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Call Us</h3>
-                  <p className="text-gray-600 text-sm md:text-base">Dallas Fort Worth: <a href="tel:214-929-5055" className="text-[#1B2A3D] hover:underline font-medium">214-929-5055</a></p>
-                  <p className="text-gray-600 text-sm md:text-base">DFW: <a href="tel:619-363-9346" className="text-[#1B2A3D] hover:underline font-medium">619-363-9346</a></p>
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Call Addis Eshetu</h3>
+                  <p className="text-gray-600 text-sm md:text-base">Dallas Fort Worth: <a href="tel:214-518-3242" className="text-[#1B2A3D] hover:underline font-medium">214-518-3242</a></p>
                 </div>
               </div>
 

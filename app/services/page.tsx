@@ -7,8 +7,8 @@ import { CTASection } from '@/components/cta-section'
 import { MobileStickyCall } from '@/components/mobile-sticky-call'
 
 export const metadata: Metadata = {
-  title: 'Our Services | New hope senior living advisory LLC – NV & CA',
-  description: 'Explore our senior home care placement services including home caregivers, senior caregivers, respite care, and live-in caregiver matching across Nevada and California.',
+  title: 'Our Services | New hope senior living advisory LLC – Dallas & Fort Worth',
+  description: 'Explore our senior care placement services including home caregivers, senior caregivers, respite care, and live-in caregiver matching across Dallas Fort Worth.',
 }
 
 export default function ServicesPage() {

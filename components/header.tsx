@@ -6,7 +6,7 @@ export function Header() {
   return (
     <header className="w-full relative z-50 shadow-md bg-white">
       <div className="bg-[#1B2A3D] text-white py-2 px-4 text-center text-sm md:text-base">
-        Call or text <a href="tel:214-929-5055" className="font-bold underline">214-929-5055</a> or send us an email. We are Dallas Fort Worth's Most Experienced Local FREE Senior Care Referral Service
+        Call or text <a href="tel:214-518-3242" className="font-bold underline">214-518-3242</a> (Addis Eshetu) or send us an email. We are Dallas Fort Worth's Most Experienced Local FREE Senior Care Referral Service
       </div>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-24">

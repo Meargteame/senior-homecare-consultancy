@@ -31,7 +31,7 @@ export function Footer() {
             
             <div className="flex items-center gap-3 mb-3">
               <Phone className="text-[#597B76] shrink-0" size={20} />
-              <p>214.929.5055</p>
+              <p>Addis Eshetu: 214.518.3242</p>
             </div>
             
             <div className="mt-6">

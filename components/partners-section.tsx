@@ -11,22 +11,22 @@ export function PartnersSection() {
             The Preferred Senior Living<br/>Advisory Service in DFW
           </h2>
           <p className="text-lg md:text-xl text-gray-500 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Families trust us because we're uniquely local, deeply experienced, and maintain relationships with over 1,200 care communities across the DFW area. Proudly featured on:
+            Families trust us because we're uniquely local, deeply experienced, and maintain relationships with care communities across the DFW area.
           </p>
+          <p className="text-sm font-bold text-[#597B76] uppercase tracking-widest mb-6">Areas We Proudly Serve</p>
           
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20">
-            {/* Logo placeholders - styled more modernly */}
             <div className="group flex items-center justify-center p-4 transition-all duration-300 hover:scale-105 opacity-60 hover:opacity-100">
-              <span className="text-3xl font-black font-sans tracking-tighter text-[#1B2A3D]">FOX 4</span>
+              <span className="text-xl font-bold text-[#1B2A3D]">Dallas Fort Worth</span>
             </div>
             <div className="group flex items-center justify-center p-4 transition-all duration-300 hover:scale-105 opacity-60 hover:opacity-100">
-              <span className="text-3xl font-black font-sans tracking-tighter text-[#1B2A3D]">CBS 11</span>
+              <span className="text-xl font-bold text-[#1B2A3D]">Garland, TX</span>
             </div>
             <div className="group flex items-center justify-center p-4 transition-all duration-300 hover:scale-105 opacity-60 hover:opacity-100">
-              <span className="text-3xl font-black font-sans tracking-tighter text-[#1B2A3D]">WFAA 8</span>
+              <span className="text-xl font-bold text-[#1B2A3D]">Plano & Frisco</span>
             </div>
             <div className="group flex items-center justify-center p-4 transition-all duration-300 hover:scale-105 opacity-60 hover:opacity-100">
-              <span className="text-xl md:text-2xl font-bold font-serif text-center leading-tight text-[#1B2A3D]">The Dallas<br/>Morning News</span>
+              <span className="text-xl font-bold text-[#1B2A3D]">Fort Worth</span>
             </div>
           </div>
         </div>
