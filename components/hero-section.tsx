@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { Check, Phone, ArrowRight, PhoneCall, ClipboardList, Heart } from 'lucide-react'
 
 const steps = [
@@ -17,11 +18,15 @@ export function HeroSection() {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-28 flex flex-col md:flex-row items-center gap-16">
         <div className="w-full md:w-1/2 relative group">
           <div className="absolute inset-0 bg-gradient-to-tr from-[#597B76]/20 to-transparent rounded-3xl -rotate-3 scale-105 transition-transform duration-500 group-hover:rotate-0"></div>
-          <img
-            src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&auto=format&fit=crop&q=80"
-            alt="Addis Eshetu and his mom"
-            className="w-full rounded-3xl shadow-2xl relative z-10 transition-transform duration-500 group-hover:-translate-y-2"
-          />
+          <div className="relative w-full aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl z-10 transition-transform duration-500 group-hover:-translate-y-2">
+            <Image
+              src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=800&auto=format&fit=crop&q=80"
+              alt="Addis Eshetu and his mom"
+              fill
+              className="object-cover"
+              unoptimized
+            />
+          </div>
           <div className="absolute -bottom-6 -right-6 md:bottom-8 md:-right-8 bg-white/80 backdrop-blur-xl border border-white/50 p-6 rounded-2xl shadow-xl z-20 max-w-sm transition-transform duration-500 group-hover:translate-y-2">
             <p className="text-sm md:text-base font-medium text-gray-800 italic leading-relaxed">
               "Our services are based on founder Addis Eshetu's personal experience with placing his mom"

@@ -1,4 +1,5 @@
 'use client'
+import Image from 'next/image'
 import { CheckCircle2, ArrowRight } from 'lucide-react'
 
 export function WhySection() {
@@ -43,11 +44,15 @@ export function WhySection() {
         <div className="w-full lg:w-1/2 relative">
           <div className="relative group">
             <div className="absolute inset-0 bg-[#597B76] rounded-[2.5rem] rotate-3 scale-100 opacity-20 transition-transform duration-500 group-hover:rotate-6"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&auto=format&fit=crop&q=80" 
-              alt="Our dedicated team" 
-              className="relative w-full rounded-[2rem] shadow-2xl object-cover z-10"
-            />
+            <div className="relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden shadow-2xl z-10">
+              <Image
+                src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&auto=format&fit=crop&q=80"
+                alt="Our dedicated team"
+                fill
+                className="object-cover"
+                unoptimized
+              />
+            </div>
             {/* Glassmorphism Stats Cards */}
             <div className="absolute -bottom-10 -left-6 md:-left-12 bg-white/70 backdrop-blur-xl p-6 md:p-8 rounded-[2rem] shadow-[0_8px_32px_rgba(0,0,0,0.1)] border border-white z-20 hidden sm:block transition-transform duration-500 hover:-translate-y-2">
               <div className="flex flex-col items-center">
