@@ -5,13 +5,13 @@ const options = [
   {
     title: 'Senior In-Home Care',
     desc: 'Professional caregivers come to your loved one\'s home — preserving independence and comfort.',
-    image: 'https://images.unsplash.com/photo-1581579205556-2580556da616?w=600&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=600&auto=format&fit=crop&q=80',
     link: '/services'
   },
   {
     title: 'Assisted Living',
     desc: 'Apartment-style communities with 24/7 staff support for daily activities and personal care.',
-    image: 'https://images.unsplash.com/photo-1516156008625-3a9d026f345a?w=600&auto=format&fit=crop&q=80',
+    image: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=600&auto=format&fit=crop&q=80',
     link: '/services'
   },
   {
