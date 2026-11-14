@@ -66,8 +66,8 @@ export default function ContactPage() {
                 </div>
                 <div>
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Email Address</h3>
-                  <a href="mailto:info@seniorhomecareconsultants.com" className="text-[#1B2A3D] hover:underline text-sm md:text-base break-all">
-                    info@seniorhomecareconsultants.com
+                  <a href="mailto:hopeadvisory2026@gmail.com" className="text-[#1B2A3D] hover:underline text-sm md:text-base break-all">
+                    hopeadvisory2026@gmail.com
                   </a>
                 </div>
               </div>

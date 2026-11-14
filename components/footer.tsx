@@ -33,6 +33,13 @@ export function Footer() {
               <Phone className="text-[#597B76] shrink-0" size={20} />
               <p>Addis Eshetu: 214.518.3242</p>
             </div>
+
+            <div className="flex items-center gap-3 mb-3">
+              <Mail className="text-[#597B76] shrink-0" size={20} />
+              <a href="mailto:hopeadvisory2026@gmail.com" className="hover:text-white transition break-all">
+                hopeadvisory2026@gmail.com
+              </a>
+            </div>
             
             <div className="mt-6">
               <p className="font-bold text-white mb-3">Connect With Us</p>
