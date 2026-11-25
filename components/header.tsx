@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
-import { Home, Heart, Menu } from 'lucide-react'
+import { Home, Heart, Menu, ExternalLink } from 'lucide-react'
+import { CONSULTATION_FORM_URL } from '@/lib/constants'
 
 export function Header() {
   return (
@@ -30,6 +31,15 @@ export function Header() {
             <Link href="/services" className="text-gray-700 hover:text-[#597B76] font-medium">Senior Living Options</Link>
             <Link href="/resources" className="text-gray-700 hover:text-[#597B76] font-medium">Resources</Link>
             <Link href="/contact" className="text-gray-700 hover:text-[#597B76] font-medium">Contact Us</Link>
+            <a
+              href={CONSULTATION_FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 bg-[#597B76] hover:bg-[#4a6762] text-white text-sm font-semibold px-4 py-2.5 rounded-lg transition-colors shadow-sm"
+            >
+              Care Form
+              <ExternalLink size={14} />
+            </a>
           </nav>
           <div className="md:hidden flex items-center">
             <button className="text-gray-700 p-2">

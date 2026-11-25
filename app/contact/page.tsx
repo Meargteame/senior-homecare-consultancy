@@ -4,7 +4,8 @@ import { Header } from '@/components/header'
 import { TrustBar } from '@/components/trust-bar'
 import { Footer } from '@/components/footer'
 import { MobileStickyCall } from '@/components/mobile-sticky-call'
-import { MapPin, Phone, Mail } from 'lucide-react'
+import { MapPin, Phone, Mail, ExternalLink, ClipboardList } from 'lucide-react'
+import { CONSULTATION_FORM_URL } from '@/lib/constants'
 
 export default function ContactPage() {
   return (
@@ -68,6 +69,27 @@ export default function ContactPage() {
                   <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Email Address</h3>
                   <a href="mailto:hopeadvisory2026@gmail.com" className="text-[#1B2A3D] hover:underline text-sm md:text-base break-all">
                     hopeadvisory2026@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="w-10 h-10 md:w-12 md:h-12 bg-[#597B76]/15 rounded-full flex items-center justify-center text-[#597B76] shrink-0 mt-0.5">
+                  <ClipboardList className="w-5 h-5 md:w-6 md:h-6" />
+                </div>
+                <div>
+                  <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-1 md:mb-2">Online Care Assessment Form</h3>
+                  <p className="text-gray-600 text-sm md:text-base mb-3">
+                    Prefer to fill out our intake form directly? Open our full-page form below.
+                  </p>
+                  <a
+                    href={CONSULTATION_FORM_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#597B76] hover:bg-[#4a6762] text-white font-semibold px-5 py-2.5 rounded-lg text-sm transition-colors shadow-sm"
+                  >
+                    Open Online Care Form
+                    <ExternalLink className="w-4 h-4" />
                   </a>
                 </div>
               </div>
